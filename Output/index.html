@@ -23,6 +23,19 @@
   <h1>JavaSript Statements</h1>
   <p>In HTML, Javascript statments are executed by the browser</p>
   <p id="hello"></p>
+  <p id="number"></p>
+  <p id="string"></p>
+  <h1>JavaScript Operators</h1>
+  <p>Twenties years to success</p>
+  <p id="operators"></p>
+  <p id="yourname"></p>
+  <p id="expressions"></p>
+  <p id="someText"></p>
+  <p id="value"></p>
+  <p>Continue Value in HTML CSS</p>
+  <p id="valuee"></p>
+  <p>Let me count total price</p>
+  <p id="total"></p>
   <script>
     // document.getElementById("demo").innerHTML = "TEST"
     // document.write("Hello");
@@ -41,16 +54,38 @@
       document.getElementById("demo").innerHTML = "This is the demo";
     }
     myFunction();
-    var x;
-    var y;
-    x = 5;
-    y = 6;
-    let z = x + y;
-    console.log(z);
-    let k;
-    k = 6;
-    document.querySelector(".assign").innerHTML= k;
+    // var x;
+    // var y;
+    // x = 5;
+    // y = 2;
+    // let z = x + y;
+    // console.log(z);
+    // let k;
+    // k = 6;
+    // document.querySelector(".assign").innerHTML= k;
     document.getElementById("hello").innerHTML = "Hello Dolly";
+    document.getElementById("number").innerHTML = 10.5
+    document.getElementById("string").innerHTML = "I'm string values"
+    // document.getElementById("operators").innerHTML = (x*y)*y;
+    document.getElementById("yourname").innerHTML = "Thanh " + " Hai";
+    var x,y;
+    x = 5 + 2;
+    y = x * 2;
+    
+    document.getElementById("expressions").innerHTML = y;
+    document.getElementById("someText").innerHTML = "This is the price to pay to success.";
+    let q = 5;
+    let w = 6;
+    let e = q + w;
+    document.getElementById("value").innerHTML = e;
+    const k = 5;
+    const l = 6;
+    const m = k + l;
+    document.getElementById("valuee").innerHTML = m;
+    const price1 = 10;
+    const price2 = 12;
+    let total = price1 + price2;
+    document.getElementById("total").innerHTML = total;
   </script>
 </body>
 </html>
