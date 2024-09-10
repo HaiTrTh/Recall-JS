@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+  <script>
+    const cars = ["Saab", "Volvo", "BMW"];
+    cars[0] = "Toyota";
+    cars.push("Audi");
+    const test = {name: "Audi", logo: "A7", years: "2024"};
+    test.name = "Test";
+    test.type = "New Test"
+    console.log(test.name);
+    console.log(test.type);
+    try{
+      document.querySelector("#demo").innerHTML = cars;
+    }
+    catch(error){
+      documet.querySelector("#demo").innerHTML = error;
+    }
+    alert(carName);
+    // const carName = "Volvo";
+    
+  </script>
+</body>
+</html>

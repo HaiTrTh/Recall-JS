@@ -12,6 +12,8 @@
     <!-- let, const, var ; -->
     <!-- name: camel-case, with  -->
     <p id="demo"></p>
+    <h2>Javascript const</h2>
+    <p id="jsConst"></p>
     <script>
       var carName = "Hello";
       console.log(carName);
@@ -54,6 +56,41 @@
       console.log(_continue);
       let _userStupid = "Continue, to do that and this";
       console.log(_userStupid);
+      var retirement = "typically useful for retirement purposes";
+      var retirement = "where an individual invests a lump sum or series of payments";
+      console.log(retirement);
+      if(true){
+        let blockScope = 2;
+      }
+      var varx = 1;
+      if(true){
+        var varx = 2;
+      }
+      console.log(varx);
+      let letx = 1;
+      if(true){
+        let letx = 2;
+        console.log(letx);
+      }
+      console.log(letx);
+      // console.log(blockScope);
+      // volVo = "Volvo";
+      // let volVo;
+      // console.log(volVo);
+      
+      // PI = PI + 10;
+      try{
+        const PI = 3.1415926538979;
+        PI = 3.14;
+        // console.log(PI);
+        document.getElementById("jsConst").innerHTML = PI;
+      }
+      catch(error){
+        document.getElementById("jsConst").innerHTML = error;
+      }
+      const pi = 13.2;
+      pi = 3.14;
+      console.log(pi);
       
     </script>
     
