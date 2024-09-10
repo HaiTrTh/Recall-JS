@@ -14,6 +14,15 @@
   <h1>Javascript Statements</h1>
   <p>In HTML, Javascrip statements are executed by the browser</p>
   <p id="test"></p>
+  <h1>Javascript Statements</h1>
+  <p>The best place to break a code line is after an operator or a comma</p>
+  <p id="demo"></p>
+  <h1>Javascrip Variables</h1>
+  <p>In this example, x is defined as a variable. Then, x is assigned the value of 6.</p>
+  <p class="assign"></p>
+  <h1>JavaSript Statements</h1>
+  <p>In HTML, Javascript statments are executed by the browser</p>
+  <p id="hello"></p>
   <script>
     // document.getElementById("demo").innerHTML = "TEST"
     // document.write("Hello");
@@ -24,7 +33,24 @@
     // function showPrint(){
     //   window.print();
     // }
-    document.getElementById("test").innerHTML = "Hello Dolly"
+    // document.getElementById("test").innerHTML = "Hello Dolly"
+    // document.getElementById("demo").innerHTML = 
+    // "Hello Dolly!"
+    function myFunction(){
+      document.getElementById("test").innerHTML = "This is the test";
+      document.getElementById("demo").innerHTML = "This is the demo";
+    }
+    myFunction();
+    var x;
+    var y;
+    x = 5;
+    y = 6;
+    let z = x + y;
+    console.log(z);
+    let k;
+    k = 6;
+    document.querySelector(".assign").innerHTML= k;
+    document.getElementById("hello").innerHTML = "Hello Dolly";
   </script>
 </body>
 </html>
