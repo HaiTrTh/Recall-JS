@@ -29,6 +29,7 @@
       <p id="demo7"></p>
       <p id="demo8"></p>
       <p id="demo9"></p>
+      <p id="arrayDemo"></p>
       <script>
         // Number 
         let test1 = 1 ;
@@ -38,7 +39,7 @@
         // String
         document.getElementById("demo").innerHTML = test1;
         let string1 = "tran thanh hai";
-        let string2 = "Cai gi do"
+        let string2 = "What's up"
         let string3 = "Failure";
         console.log(string1);
         console.log(string2);
@@ -86,6 +87,19 @@
         let x2 = 34;
         console.log(x1);
         console.log(x2);
+        let bigInt = BigInt("121212321312435353453453453459898980");
+        console.log(bigInt);
+        let x = 5;
+        let y = 6; 
+        let z  = 6;
+        console.log(x == y);
+        console.log(y == z);
+        const quote = ["My", "dear", "you", "must", "run", "as", "fast","as", "you", "can", "just", "to", "stay", "as", "the","same","place"]
+        const arrayDemo = document.getElementById("arrayDemo").innerHTML = quote.join(" ");
+        const myInsomnia =  { first: "Reduce drugs", second: "Cut out coffee", third: "Cut out nap"};
+        console.log(myInsomnia.first);
+        console.log(myInsomnia.second);
+        console.log(myInsomnia.third);
       </script>
 </body>
 </html>
