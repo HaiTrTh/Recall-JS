@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+      <!--In js we has 8 Datatypes -->
+      <!-- String
+      Number
+      BigInt
+      Null
+      Undefined
+      Boolean
+      Symble
+      Object (Object, Array, ) -->
+      <!-- The Object Datatype; -->
+       <!-- The object data type can contain both built-in objects, user defined objects:
+       Built-in object types can be:
+       Objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
+       Objects, arrays, dates, maps, sets, intarrays, floatarrays, promise, and more. -->
+      <p id="demo"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
+      <p id="demo7"></p>
+      <p id="demo8"></p>
+      <p id="demo9"></p>
+      <script>
+        // Number 
+        let test1 = 1 ;
+        let test2 = 2 ;
+        console.log(test1);
+        console.log(test2);
+        // String
+        document.getElementById("demo").innerHTML = test1;
+        let string1 = "tran thanh hai";
+        let string2 = "Cai gi do"
+        let string3 = "Failure";
+        console.log(string1);
+        console.log(string2);
+        console.log(string3);  
+        document.getElementById("demo2").innerHTML = string2;
+        //Boolean
+        let right = true;
+        let wrong = false;
+        document.getElementById("demo3").innerHTML = right;
+        //object, built-in objects, user defined objects.
+        const obj1 = {name : "Tran thanh Hai", age: "24", education: "Rut tia ra cac bai hoc"}
+        console.log(obj1);
+        console.log(obj1.name);
+        console.log(obj1.age);
+        console.log(obj1.education);
+        //arrays, built-in arrays;
+        const array = ["My", "Dear", "We" , "Must" ,"Run" ,"As", "Fast", "As", "We", "Can", "Just","To", "Stay", "As","The","Same","Place"];
+        document.getElementById("demo4").innerHTML = array.join(" ");
+        const dates = new Date();
+        document.getElementById("demo5").innerHTML = dates;
+        const sets = new Set();
+        document.getElementById("demo6").innerHTML = sets;
+        // const quick = new 
+        const maps = new Map();
+        document.getElementById("demo7").innerHTML = maps;
+        let data = 16 + "Volvo";
+        console.log(data);
+        let test11 = 16 + 4 + "Volvo";
+        let test12 = "Volvo" + 16 + 4;
+        document.getElementById("demo7").innerHTML = test11;
+        document.getElementById("demo8").innerHTML = test12;
+        let dynamicTypes;
+        // dynamicTypes = 5;
+        // dynamicTypes = "John";
+        console.log(dynamicTypes);
+        let singleQuotes = 'Single Quotes';
+        let doubleQuotes = "Double Quotes";
+        console.log(singleQuotes);
+        console.log(doubleQuotes);
+        let answer1 = "It's alright";
+        let answer2 = "He's called Johny"
+        console.log(answer1);
+        console.log(answer2);
+        let x1 = 34.00;
+        let x2 = 34;
+        console.log(x1);
+        console.log(x2);
+      </script>
+</body>
+</html>
