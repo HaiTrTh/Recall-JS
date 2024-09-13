@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <p id="demo"></p>
   <script>
     // let x = 3.14;
     // let y = 3;
@@ -20,10 +20,48 @@
     // console.log(testx);
     // let testz = (0.2*10 + 0.1*10)/10;
     // console.log(testz);
-    let x = 10;
-    let y = 20;
-    let z = "The result is: " + x + y;
-    console.log(z);
+    // let x = 10;
+    // let y = 20;
+    // let z = "The result is: " + (x + y);
+    // let x = 10;
+    // let y = 20;
+    // let z = "30"
+    // document.getElementById("demo").innerHTML = x + y +z;
+    // let x = 100;
+    // let y = "10";
+    // document.getElementById("demo").innerHTML = x - y;
+    // let test = 100 / "10";
+    // let testNaN = isNaN(test);
+    // let x = NaN;
+    // let y = "5";
+    document.getElementById("demo").innerHTML = typeof NaN;
+
+    // let myNumber = 2;
+    // while (myNumber != Infinity){
+    //   myNumber = myNumber * myNumber;
+    //}
+    let testX = 2 / 0;
+    let testY = -2 / 0;
+    console.log(testX);
+    console.log(testY);
+    console.log(typeof Infinity);
+    let hexa = 0xF;
+    let myNumber = 32;
+    console.log(myNumber.toString(32));
+    console.log(myNumber.toString(16));
+    console.log(myNumber.toString(10));
+    console.log(myNumber.toString(8));
+    console.log(myNumber.toString(2));
+    // let x = 500;
+    // let y = new Number(500);
+    // console.log(x == y);
+    // console.log(x === y);
+    let x = new Number (500);
+    let y = new Number (500);
+    console.log(x );
+    console.log(y);
+    // console.log(hexa);
+    
   </script>
 </body>
 </html>
