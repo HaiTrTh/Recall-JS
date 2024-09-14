@@ -93,20 +93,50 @@
       // let convertText2 = text2.toString();
       // let padded2 = convertText2.padEnd(4,"0");
       // console.log(padded);
-      // console.log(padded2);
+      // console.log(padded2);  
       // let text = "Hello world!";
       // let result = text.repeat(2);
       // console.log(result);
       // let text = "Please visit Microsoft!, Microsoft!, Microsoft!";
       // let newText = text.replace(/MICROSOFT!/i, "W3Schools");
       // console.log(newText);
-      const text = "Though no one can go back and make a brand new start but anyone can start from now and make a brand new ending";
-      let splitText = text.split(',');
-      let splitText2 = text.split(' ');
-      console.log(splitText);
-      console.log(splitText2);
-      let splitText3 = text.split('');
-      console.log(splitText3);
+      // const text = "Though no one can go back and make a brand new start but anyone can start from now and make a brand new ending";
+      // let splitText = text.split(',');
+      // let splitText2 = text.split(' ');
+      // console.log(splitText);
+      // console.log(splitText2);
+      // let splitText3 = text.split('');
+      // console.log(splitText3);
+      // let text = `He's often called "Johnny"`;
+      // console.log(text);
+      // let text2 = `The quick brown fox jumps over the lazy dog `;
+      // console.log(text2);
+      // let variable1 = 2;
+      // let variable2 = 3;
+      // let text3 = `This is the first ${variable1} and ${variable2}`;
+      // console.log(text3);
+      let text = `
+      The quick 
+      brown for 
+      jumps over 
+      the lazy dog`;
+      console.log(text);
+      let firstName = "John";
+      let lastName = "Doe";
+      let text2 = `Welcome ${firstName} , ${lastName}`;
+      console.log(text2); 
+      let price = 10;
+      let VAT = 0.25;
+      let total = `Total: ${(price*(1 + VAT)).toFixed(2)}`; 
+      console.log(total);
+      let header = "Teamplate Strings";
+      let tags = ["temlate strings", "javascript", "es6"];
+      let html = `<h2>${header}</h2><ul>`;
+      for(const x of tags){
+        html+= `<li>${x}</li>`
+      };
+      html+= `</ul>`;
+      document.getElementById("demo").innerHTML = html;
 </script>
 </body>
 </html>
