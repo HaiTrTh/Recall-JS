@@ -115,28 +115,49 @@
       // let variable2 = 3;
       // let text3 = `This is the first ${variable1} and ${variable2}`;
       // console.log(text3);
-      let text = `
-      The quick 
-      brown for 
-      jumps over 
-      the lazy dog`;
-      console.log(text);
-      let firstName = "John";
-      let lastName = "Doe";
-      let text2 = `Welcome ${firstName} , ${lastName}`;
-      console.log(text2); 
-      let price = 10;
-      let VAT = 0.25;
-      let total = `Total: ${(price*(1 + VAT)).toFixed(2)}`; 
-      console.log(total);
-      let header = "Teamplate Strings";
-      let tags = ["temlate strings", "javascript", "es6"];
-      let html = `<h2>${header}</h2><ul>`;
-      for(const x of tags){
-        html+= `<li>${x}</li>`
-      };
-      html+= `</ul>`;
-      document.getElementById("demo").innerHTML = html;
+      // let text = `
+      // The quick 
+      // brown for 
+      // jumps over 
+      // the lazy dog`;
+      // console.log(text);
+      // let firstName = "John";
+      // let lastName = "Doe";
+      // let text2 = `Welcome ${firstName} , ${lastName}`;
+      // console.log(text2); 
+      // let price = 10;
+      // let VAT = 0.25;
+      // let total = `Total: ${(price*(1 + VAT)).toFixed(2)}`; 
+      // console.log(total);
+      // let header = "Teamplate Strings";
+      // let tags = ["temlate strings", "javascript", "es6"];
+      // let html = `<h2>${header}</h2><ul>`;
+      // for(const x of tags){
+      //   html+= `<li>${x}</li>`
+      // };
+      // html+= `</ul>`;
+      // let text = "Please locate where 'locate' occurs!";
+      // // let index = text.lastIndexOf("locJohnates");
+      // let search = text.search(/locate/g);
+      // document.getElementById("demo").innerHTML = search;
+      // let text2 = "The rain in spain stays mainly in the plain";
+      // let search2 = text.match("ain");
+      // console.log(search2);
+      // let text = "The rain in SPAIN stays mainly in the plain";
+      // console.log(text.match("ain"));
+      // let text2 = "The rain in SPAIN stays mainly in the plain"; 
+      // console.log(text.match(/ain/));
+      // let text3 = "The rain in SPAIN stays mainly in the plain";
+      // console.log(text.match(/ain/gi));
+      // let text4 = "The rain in SPAIN stays mainly in the plain"; 
+      // console.log(text.match(/ain/g));
+        //  let text = "I love cats. Cats are very easy to love. Cats are very popular."
+        //  const includesText = text.includes("cats.");
+        //  let text2 = "I love cats. "
+        //  document.getElementById("demo").innerHTML = includesText;
+      let text = "Enjoy your staying in the U.S, thank you";
+      let resultStartWith = text.startsWith("your", 6);
+      console.log(resultStartWith);
 </script>
-</body>
+</body> 
 </html>
