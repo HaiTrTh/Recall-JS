@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavaScript "this"</h1>
+
+  <p>This example demonstrate that in a regular function, the "this" keyword represents different objects depending on how the function was called.</p>
+
+  <p>Click the button to execute the "hello" function again, and you will see that this time "this" represents the button object.</p>
+  <button id="btn"> Click me! </button>
+  <p id="demo"></p>
+  <script>
+    // function Test(){
+    //   console.log("function declaration");
+    // }
+    // Test();
+    // const test = function() {
+    //   console.log("functon expression");
+    // }
+    // test();
+    // const arrowFunction = () => {
+    //   console.log("arrow function");
+    // }
+    // arrowFunction();
+    // let x = myFunction(4,3);
+    // function myFunction(a,b){
+    //   return a * b;
+    // }
+    // console.log(x);
+    // function toCelsius(fahrenheit){
+    //   return (5/9) * (fahrenheit - 32);
+    // }
+    // let value = toCelsius(225)  
+    // console.log(value);
+    // function converToDegree(degree) {
+    //   return (degree + 9/5) + 32;
+    // }
+    // console.log(converToDegree(12));
+    // let myFunction = (a,b) => a * b;
+    // console.log(myFunction(2,3));
+    // let hello = (val, what) => "Hello " + val + what;
+    // console.log(hello("test"," thu"));
+    // let hello = function() {
+    //   document.getElementById("demo").innerHTML += this;
+    // }
+    // window.addEventListener("load", hello);
+    // document.getElementById("btn").addEventListener("click",hello);
+    // function hello() {
+    //   document.getElementById("demo").innerHTML += this;
+    // }    
+    // window.addEventListener("load", hello);
+    // document.getElementById("btn").addEventListener("click",hello);
+    
+    function myFunction(a,b){
+      return a * b;
+    }
+    const x = function(a,b) {return a * b;}
+    console.log(x);
+    
+    // hoisting function
+  
+    document.getElementById("demo").innerHTML = myFunction(5);
+    function myFunction(value){
+        return (value * value);
+    }
+    //  self-involke
+    (function(){
+      let x = ("Hello");
+      document.getElementById("demo").innerHTML = x;
+    })()
+
+    </script>
+</body>
+</html>
