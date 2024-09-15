@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p>The Javascript this Keyword</p>
+    <button onclick='this.style.display="none"'>Click to Remove Me! </button>
+    <script>
+      //  const person = {
+      //    firstName: "Tran",
+      //    lastName: "Hai",
+      //    id: 6603216,
+      //    fullName: function(){
+      //     return this.firstName + " " + this.lastName;
+      //    }
+      //  }
+       "use strict"
+       function myFunction(){
+          return this;
+       }
+       document.getElementById("demo").innerHTML = myFunction();
+      //  console.log(person.fullName());
+    </script>
+</body>
+</html>
