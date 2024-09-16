@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Arrays</h1>
+    <h2>The forEach() Method</h2>
+    <p>Call a function for each array element:</p>
+    <p id="demo"></p>
+    <script>
+      // const car = ["Saab", "Volvo", "Mercedes", "BMW"];
+      // // car.push("New car");
+      // // console.log(car);
+      // // let result = car.pop();
+      // // console.log(result);
+      // // console.log(car);
+      // // const car0 = car[0];
+      // // console.log(car[car.length-1]);
+      // // console.log(car[car.length-1]);
+      // // car[0] = "Change Car";
+      // // console.log(car);
+      // const newCar = car.unshift();
+      // console.log(newCar);
+      // console.log(car);
+      // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // console.log(fruits);
+      // console.log(fruits.toString());
+      // document.getElementById("demo").innerHTML = fruits;
+      // console.log(typeof fruits);
+      // myArray[0] = Date.now;
+      // myArray[1] = myFunction;
+      // myArray[2] = myCars; 
+      // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // fruits[6] = "Cucumber";
+      // console.log(fruits);
+      // let listFruits = "<ul>";
+      // fruits.forEach(function(fruit){
+      //   listFruits += `<li> ${fruit} </li>`;
+      // })
+      // listFruits +="</ul>";
+      // document.getElementById("demo").innerHTML = listFruits;
+      // const points = [40 , 100, 1, 5, 25, 10];
+      // console.log(points);
+      // const fruits = ["Banana", "Orange", "Apple"];
+      // console.log(Array.isArray(fruits));
+      // const fruits = ["Banana", "Orange", "Apple"];
+      // document.getElementById("demo").innerHTML = "Array: " + Array.isArray(fruits)
+      
+      // const myObj = {
+      //   name: "John",
+      //   age: 30,
+      //   cars: [
+      //     {name: "Ford" ,models:["Fiesta", "Focus", "Mustang"]},
+      //     {name: "BMW", models:["320", "X3", "X5"]},
+      //     {name: "Fiat", models:["500", "Panda"]},
+      //   ]
+      // }
+      // let x = "";
+      // for(let i in myObj.cars) {
+      //   x += "<h1>" + myObj.cars[i].name + "</h1>";
+      //     for(let j in myObj.cars[i].models){
+      //        x += `${myObj.cars[i].models[j]} <br>`
+      //       }
+      // }
+      // document.getElementById("demo").innerHTML = x;
+     
+      // object in array
+      // const array = [{name : "Deng", age: 18, education: "colleage1"}, {name: "Hai", age: 25, education: "colleage2"}];
+      // console.log(array[1].education);
+        // const fruits = ["Banana", "Orange" ,"Apple" ,"Mango"];
+        // // let fruit = fruits.at(3);
+        // // console.log(fruit);
+        // document.getElementById("demo").innerHTML = fruits.join(" ")
+        
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // // let length = fruits.shift();
+        // // console.log(length);
+        // fruits.unshift("Lemon");
+        // console.log(fruits);
+        // const myBoys = ["Emil", "Tobias", "Linus"]
+        // const myGirls = ["Cili" , "Lone"];
+        // const myChildren = myBoys.concat("Peter");
+        // console.log(myChildren);
+        // const myArr = [[1,2], [3,4], [5,6]];
+        // const newArr = myArr.flat();
+        // console.log(newArr);
+        // const fruits = ["Banana", "Orange" , "Apple", "Mango"];
+        // console.log(fruits);
+        // const result = fruits.splice(2, 2, "Lemon", "Kiwi");
+        // console.log(fruits);
+        // console.log(result);
+        // const months = ["Jan", "Feb", "Mar", "Apr"];
+        // const spliced  = months.toSpliced(0,1);
+        // console.log(spliced);
+        // console.log(months);
+        // const fruits = ["Banana", "Orange", "Lemon", "Apple" , "Mango"];
+        // const citrus = fruits.slice(3);
+        // console.log(fruits);
+        // console.log(citrus);
+        // const numbers = [24, 45, 90, 16 ,25];
+        // let txt = "";
+        // numbers.forEach(function(value, index, array){
+        //    txt+= index +": "+ value + ", ";
+        // })
+        // let result = numbers.map(function(value, index, array){
+        //   return {
+        //     index: index,
+        //     value: value,
+        //   }
+        // })
+        // const changeNumbers = numbers.map(function(value, index, array){
+        //   return value *2; 
+        // })
+        // console.log(changeNumbers);
+        // console.log(result); 
+        // document.getElementById("demo").innerHTML = txt;
+        const numbers = [34, 4, 9, 16, 25];
+        let text = "";
+        const result = numbers.filter(function(value, index, array) {
+            return  value > 14  ;
+        }).map((value, index) => {
+            return value * 2; 
+        })
+        // console.log(result);
+        // const numbers2 = [34, 20 ,12 , 22, 23, 14];
+        // const sum = numbers2.reduce(function(total, value, index, array){
+        //     return total +=value;
+        // }, 0)
+        // console.log(sum)
+        const numbers2 = [45, 4 , 9, 16, 245];
+        let allOver4 = numbers.some(function (value, index, array){
+            return value > 18;
+        })
+        console.log(allOver4);
+        // document.getElementById("demo").innerHTML = over14.join(" ");
+        // console.log(over14);
+        const months = ["Januar", "Februar" , "Mar", "Ap"]
+        const myMonths = months.with(2, "March");
+        console.log(months);
+        console.log(myMonths);
+      </script>
+</body>
+</html>
