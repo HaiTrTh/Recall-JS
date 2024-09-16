@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+      <h1>JavaSript Function</h1>
+      <h2>Callback functions</h2>
+      <p>The result of the calculaion is</p>
+      <p id="demo"></p>
+  <script>
+      // what is call back
+      //call back is a function and call in another function
+      // function sayHello() {
+      //   console.log("Say hello")
+      // }
+      // setTimeout(sayHello, 3000);   
+      // function myDisplay(some) {
+      //   document.getElementById("demo").innerHTML = some;
+      // }
+      // function myFirst(myDisplay){
+      //   // myDisplay("Hello!");
+      // }
+      // function mySecond(){
+      //   myDisplay("Goodbye!")
+      // }
+      // mySecond();
+      // myFirst();
+      // function myDisplayer(value) {
+      //   document.getElementById("demo").innerHTML = value; 
+      // }
+      // function sum(number1, number2, myDisplayer){
+      //     let sum = number1 + number2;
+      //     myDisplayer(sum);
+      // }
+      // sum(2,3,myDisplayer)
+      // const myNumbers = [4, 1, -20, -7, 5, 9, -6];
+      // const result = myNumbers.filter((value) => {
+      //    return value > 0;
+      // })
+      // document.getElementById("demo").innerHTML = result.join(" ");
+      
+      // setTimeout(showTheText, 3000);
+      // callback = a function that is passed as an argument to another function.
+      // use to handle asynchoronuous opeartions
+      // 1. Reading files.
+      // 2. Network requests.
+      // 3. Interacting with database.
+      // Hey, when it's done, call this next.
+      // callback hell
+      // function task1(callback){
+      //  setTimeout(()=>{
+      //   console.log("Complete task 1")
+      //   callback();
+      //  },3000)
+      // }
+      // function task2(callback){
+      //   setTimeout(()=>{
+      //     console.log("Complete task 2")
+      //     callback();
+      //   },2000)
+      // }
+      // function task3(callback){
+      //   setTimeout(()=>{
+      //     console.log("Complete task 3")
+      //     callback();
+      //  },1000)
+      // }
+      // function task4(callback){
+      //   setTimeout(()=>{
+      //     console.log("Complete task 4")
+      //     callback();
+      //  },1500)
+      // }
+
+      // task1(()=> {
+      //   task2(() =>{
+      //     task3(() => {
+      //       task4(()=>{
+      //         console.log("All complete task")
+      //       })
+      //     })
+      //   })
+      // })
+      var promise = new Promise(function(resolve,reject) {
+        resolve()
+
+      })
+      promise.then(data)
+        return data;
+      
+  
+  </script>
+</body>
+</html>

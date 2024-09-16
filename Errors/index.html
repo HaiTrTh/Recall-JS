@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p>Test</p>
+  <p id="demo"></p> -->
+  <h1>Javascript try catch</h1>
+  <p>Please input a number between 5 and 10</p>
+  <input type="text" id="demo"> 
+  <button onclick="checkInput()">Test Input</button>
+   <p id="p01"></p> 
+    <script>
+     function checkInput() {
+      let valueInput = document.getElementById("demo").value;
+      document.getElementById("p01").innerHTML = "";
+      try{
+        if(valueInput.trim() == "") throw "empty"
+        else if(parseInt(valueInput) < 5) throw "small"
+        else if(parseInt(valueInput) > 10) throw "hight"
+        else if(isNaN(valueInput)) throw "not a number"
+      }
+      catch(error){
+        document.getElementById("p01").innerHTML = "Input is " + error;
+      }
+      finally{
+        document.getElementById("demo").value = "";
+      }
+     }
+    </script>
+</body>
+</html>
