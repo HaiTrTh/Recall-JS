@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head> 
+  <style>
+    #box1{
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      line-height: 100px;
+      margin-bottom: 12px;
+    }
+    #box2{
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+<body>
+    <!-- <div id="box1">
+      Mouse Over Me
+    </div>
+    <div id="box2">
+      Click Me
+    </div> -->
+    <!-- <h1>Javascript Validation</h1>
+    <p>Please input a number between 1 and 10:</p>
+    <input type="text" id="inputNumber">
+    <button onclick="submitButton()">Submit</button> 
+    <p id="demo"></p>
+    <p></p> -->
+    <!-- <div id="demo">
+      <p class="hello"></p>
+      <p class="hello"></p>
+      <p class="hello"></p>
+      <p class="hello"></p>
+    </div> -->
+    <!-- <h1 id="id01">Old heading</h1> -->
+    <h1>Javascript addEventListener()</h1>
+    <p>This example uses the addEvenListener() method to attach a click event to a button.</p>
+    <button id="btnDate">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+      const element = document.getElementById("id01");
+      // element.innerHTML = "New heading";
+      // document.getElementById("box1").addEventListener("hover",changeContentMethod);
+      // document.getElementById("box1").addEventListener("mouseover", function(){
+      //   document.getElementById("box1").innerHTML = "Hello";
+      // })
+      function changeContentMethod(){
+          console.log(1);
+      }
+      document.getElementById("btnDate").addEventListener("click",function(){
+          document.getElementById("demo").innerHTML = Date()
+      })
+      
+      //  function submitButton(){
+      //     let valueInput = document.getElementById("inputNumber").value.trim();
+      //     let text;
+      //     if(valueInput >= 1 && valueInput <= 10){
+      //       text = "Input OK";
+      //     }
+      //     else{
+      //       text = "Input value invalid";
+      //     }
+      //     document.getElementById("demo").innerHTML = text;
+      //  }
+      // let helloClass = document.querySelectorAll(".hello");
+      // let helloClass2 = document.getElementsByClassName("hello");
+      // let result =  document.getElementById("demo").getElementsByTagName("p");
+      // console.log(result);
+      // document.query
+      // let result = Array.from(helloClass).map((item,index)=>{
+      //   return {
+      //     id: index,
+      //     item: item.innerHTML,
+      //   }
+      // }) 
+      // console.log(result);
+      // console.log(helloClass2);
+      // Array.from(helloClass2).forEach((item)=>{
+      //   console.log(item);
+      // })
+    </script>
+</body>
+</html>

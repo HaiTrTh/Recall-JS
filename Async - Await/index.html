@@ -10,6 +10,9 @@
     <ul id="pokemon">
 
     </ul>
+      <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+      <button onclick=" fetchData()">Fetch Pokemon</button> <br>
+      <img src="" alt="" id="pokemonImg">
     <script>
       // function myDisplayer(value){
       //   document.getElementById("demo").innerHTML = value; 
@@ -113,30 +116,62 @@
       //       });
       //   }
       // fetchData();  // Call the function
-      function fetchData(){
-        return fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-          .then(response => response.json())
-          .then(data => console.log(data))
-      }
-      fetchData()
-      async function fetchData2(){
+      // function fetchData(){
+      //   return fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+      //     .then(response => response.json())
+      //     .then(data => console.log(data))
+      // }
+      // fetchData()
+      // function fetchData(){
+      //   return fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+      //       .then(response => {
+      //         if(!response.ok){
+      //           throw new Error("Could not fetch value here")
+      //         }
+      //         return response.json();
+      //       })
+      //       .then(data => console.log(data))
+      //       .catch(error => console.error(error));
+      // }
+      async function fetchData(){
         try{
-          const response = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
-          const datas = await response.json();
-          console.log(datas);
-          const ulblock = document.getElementById("pokemon");
-          const result = datas.game_indices.map((data)=>{
-            return `<li>
-                        <h2> ${data.game_index}</h2>
-                    </li>`
-          });
-          ulblock.innerHTML = result.join('');
+          const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+          const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+          if(!response.ok){
+            throw new Error("Could not fetch resource at here");
+          }
+          const data = await response.json();
+          let imgElement = document.getElementById("pokemonImg")
+          imgElement.setAttribute("src", `${data.sprites.front_default}`)
         }
         catch(error){
-          console.error("Error: " + error);
+          console.error(error);
+          let imgElement = document.getElementById("pokemonImg")
+          imgElement.setAttribute("src", "")
+          imgElement.setAttribute("alt", `${error}`)
+        }
+        finally{
+          document.getElementById("pokemonName").value ="";
         }
       }
-      fetchData2();
+      // async function fetchData2(){
+      //   try{
+      //     const response = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+      //     const datas = await response.json();
+      //     console.log(datas);
+      //     const ulblock = document.getElementById("pokemon");
+      //     const result = datas.game_indices.map((data)=>{
+      //       return `<li>
+      //                   <h2> ${data.game_index}</h2>
+      //               </li>`
+      //     });
+      //     ulblock.innerHTML = result.join('');
+      //   }
+      //   catch(error){
+      //     console.error("Error: " + error);
+      //   }
+      // } 
+      // fetchData2();
     </script>  
 </body>
 </html>
