@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      function Person(first, last, age ,eye,...rest){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eye = eye;
+        this.rest = rest
+      }
+      const mine = new Person("Hai", "Tran" , 25, "black");
+      const myFather = new Person("Gung", "Tran", 80 , "black");
+      const myMother = new Person("Huong", "Nguyen" , 80, "black");
+      const mySelf = new Person("Why" , "I " , "Can't" , "Sleep", "I'm ", "very" , "tiered")
+      const test  = new Person("Why",  "many" , "people" ,"sleep", "so" , "good", "but", "I", "can", "do", "that"); 
+      let text = " ";
+      for(let i in test){
+        text += test[i]+ " ";
+      }
+    //  How I can solve a problem with that, I can't do that with object
+      console.log(Person.test);
+      console.log(text);
+      console.log(myFather);
+      console.log(myMother);
+    </script>
+</body>
+</html>

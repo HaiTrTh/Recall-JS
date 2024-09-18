@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+    <script>
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York",
+        education: "Colleage",
+        fullName: function(){
+          return this.name + " " + this.education;
+        }
+      };
+      const person2 = {
+        firstName: "Hai",
+        lastName: "Tran",
+        city: "New York",
+        sleep: "Insomnia",
+        treatMent: function(){
+          return this.firstName + " " + this.lastName + " " + " "+ this.sleep + " You are treat success insomnia";
+        }
+      }
+      document.getElementById("demo").innerHTML = person2.treatMent();
+      //  console.log(person["name"]);
+      // console.log(person["age"]);
+      // console.log(person["city"]);
+      // console.log(person["education"]);
+      // let myString = JSON.stringify(person);
+      // let text = "";
+      // for(let index in person){
+      //   text += index + " ";
+      // }
+      // document.getElementById("demo").innerHTML = text;
+      // document.getElementById("demo").innerHTML = person.fullName().toUpperCase();
+    </script>
+</body>
+</html>
